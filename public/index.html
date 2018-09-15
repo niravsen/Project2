@@ -5,22 +5,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Sign-in Page</title>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/js/materialize.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/css/materialize.min.css">
+
 </head>
 <body>
     <div class="navbar fixed">
-            <nav>
-                <div class="nav wrapper center">
-                <h1>Play N' Learn</h1>
-                </div>
-            </nav>
-        </div>  
+        <nav>
+            <div class="nav wrapper center">
+            <h1>Play N' Learn</h1>
+            </div>
+        </nav>
+    </div>  
 <!--sign up-->
     <div class="row">
         <form class="col s12">
             <div class="row">
                 <div class="input-field col s6">
-                    <input placeholder="Placeholder" id="first-name" type="text" class="validate">
+                    <input  id="first-name" type="text" class="validate">
                     <label for="first-name">First Name</label>
                 </div>
                 <div class="input-field col s6">
@@ -29,19 +32,20 @@
                 </div>
             </div>
             <div class="row">
-                <div class="input-field col s12">
-                    <input placeholder="Placeholder" id="country" type="text" class="validate">
+                <div class="input-field col s9">
+                    <input  id="country" type="text" class="validate">
                     <label for="country">Country</label>
                 </div>
             </div>
             <div class="row">
-                <div class="input-field col s12">
-                    <input placeholder="Placeholder" id="age" type="text" class="validate">
+                <div class="input-field col s3">
+                    <input  id="age" type="text" class="validate">
                     <label for="country">Age</label>
                 </div>
             </div>
-            <a href="layout.html"><button id="index-submit">Sign In!</button></a> 
+            <a href="/public/layout.html"><button id="index-submit">Sign In!</button></a> 
         </form>
     </div>
+    
 </body>
 </html>
