@@ -2,7 +2,7 @@
   "development": {
     "username": "guestuser",
     "password": "GuestSQL",
-    "database": "exampledb",
+    "database": "project_2",
     "host": "localhost",
     "dialect": "mysql",
     "port": 3306
