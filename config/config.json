@@ -1,7 +1,7 @@
 {
   "development": {
-    "username": "root",
-    "password": "root",
+    "username": "guestuser",
+    "password": "GuestSQL",
     "database": "project_2",
     "host": "localhost",
     "dialect": "mysql",
