@@ -11,6 +11,7 @@ CREATE TABLE users (
     lastname VARCHAR (56),
     age INTEGER,
     country VARCHAR(32),
+    progress INTEGER,
     PRIMARY KEY (id)
 );
 
