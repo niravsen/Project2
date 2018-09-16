@@ -32,6 +32,7 @@ $(document).ready(function () {
   htmlBtn.on("click", function () {
     language.hide();
     level.show();
+  games.hide();  
   });
 
   cssBtn.on("click", function () {
