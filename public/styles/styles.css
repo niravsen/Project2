@@ -99,7 +99,7 @@ p {
   margin-top: 2%;
   margin-left: 10%;
   width: 80%;
-  padding-bottom: 2%;
+  padding-bottom: 3%;
   background-color: #f4ce42;
   border: .25em solid black;
   box-shadow: 5px 5px 5px 5px rgb(0, 0, 0, 0.5);
@@ -234,7 +234,7 @@ h6 {
   text-shadow: 3px 3px rgb(0, 0, 0, 0.25)
 }
 
-#Beginnger-Level {
+#Beginner-Level {
   width: 30%;
   margin-top: 5%;
   margin-left: 15%;
@@ -269,8 +269,8 @@ h6 {
 
 #Game1 {
   width: 30%;
-  margin-top: 5%;
-  margin-left: 25%;
+  margin-top: 3%;
+  margin-left: 15%;
   margin-right: 5%;
   padding-top: 2%;
   padding-bottom: 7%;
@@ -281,7 +281,7 @@ h6 {
 
 #Game2 {
   width: 30%;
-  margin-top: 5%;
+  margin-top: 3%;
   margin-left: 5%;
   padding-top: 2%;
   padding-bottom: 7%;

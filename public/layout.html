@@ -1,21 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
-
+<style>
+body { 
+ background: url(images/clouds.jpg) repeat center center fixed; 
+ -webkit-background-size: cover;
+ -moz-background-size: cover;
+ -o-background-size: cover;
+background-size: 50%;
+}
+</style>
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
     <link rel="stylesheet" href='styles/styles.css'/>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Luckiest+Guy" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Fredoka+One" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/css/materialize.min.css">
-    <script src="https://code.jquery.com/jquery-2.2.4.js" integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI="
-    crossorigin="anonymous"></script>
     <title>Sign-in Page</title>
     <title>Layout Page</title>
-    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/js/materialize.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/css/materialize.min.css">
 </head>
@@ -33,12 +38,12 @@
         <div id="box6">
              <div id="box4">
                 <button id="html-btn" class="language, btn btn-warning btn-lg" style="font-family: 'Fredoka One'; letter-spacing: 5px; box-shadow: 3px 3px 3px 3px rgb(0, 0, 0, 0.5);" type="button;">HTML</button>
-                <button id="CSS-language" class="language, btn btn-warning btn-lg" style="font-family: 'Fredoka One'; letter-spacing: 5px; box-shadow: 3px 3px 3px 3px rgb(0, 0, 0, 0.5);">CSS</button>
-                <button id="Javascript-language" class="language, btn btn-warning btn-lg" style="font-family: 'Fredoka One'; letter-spacing: 5px; box-shadow: 3px 3px 3px 3px rgb(0, 0, 0, 0.5);">Javascript</button>
+                <button id="CSS-language" class="language, btn btn-warning btn-lg" style="font-family: 'Fredoka One'; letter-spacing: 5px; box-shadow: 3px 3px 3px 3px rgb(0, 0, 0, 0.5);" type="button;">CSS</button>
+                <button id="Javascript-language" class="language, btn btn-warning btn-lg" style="font-family: 'Fredoka One'; letter-spacing: 5px; box-shadow: 3px 3px 3px 3px rgb(0, 0, 0, 0.5);" type="button;">Javascript</button>
              </div>
              <div id="box5">
-            <button id="Python-language" class="language, btn btn-warning btn-lg" style="font-family: 'Fredoka One'; letter-spacing: 5px; box-shadow: 3px 3px 3px 3px rgb(0, 0, 0, 0.5);">Python</button> 
-                <button id="Ruby-language" class="language, btn btn-warning btn-lg" style="font-family: 'Fredoka One'; letter-spacing: 5px; box-shadow: 3px 3px 3px 3px rgb(0, 0, 0, 0.5);">Ruby</button>
+            <button id="Python-language" class="language, btn btn-warning btn-lg" style="font-family: 'Fredoka One'; letter-spacing: 5px; box-shadow: 3px 3px 3px 3px rgb(0, 0, 0, 0.5);" type="button;">Python</button> 
+                <button id="Ruby-language" class="language, btn btn-warning btn-lg" style="font-family: 'Fredoka One'; letter-spacing: 5px; box-shadow: 3px 3px 3px 3px rgb(0, 0, 0, 0.5);" type="button;">Ruby</button>
              </div>
         </div>     
         </div>
@@ -52,36 +57,36 @@
             </div>
              <div id="box6" style="padding-bottom: 5%; margin-top: 50px;">
                 <div id="box7">
-                    <button id="Beginnger-Level" class="level, btn btn-warning btn-lg" style="font-family: 'Fredoka One'; letter-spacing: 5px; box-shadow: 3px 3px 3px 3px rgb(0, 0, 0, 0.5);">Beginnger</button>
-                    <button id="Intermediate-Level" class="level, btn btn-warning btn-lg" style="font-family: 'Fredoka One'; letter-spacing: 5px; box-shadow: 3px 3px 3px 3px rgb(0, 0, 0, 0.5);">Intermediate</button>
+                    <button id="Beginner-Level" class="level, btn btn-warning btn-lg" style="font-family: 'Fredoka One'; letter-spacing: 5px; box-shadow: 3px 3px 3px 3px rgb(0, 0, 0, 0.5);" type="button;">Beginnger</button>
+                    <button id="Intermediate-Level" class="level, btn btn-warning btn-lg" style="font-family: 'Fredoka One'; letter-spacing: 5px; box-shadow: 3px 3px 3px 3px rgb(0, 0, 0, 0.5);" type="button;">Intermediate</button>
                 </div>
                 <div id="box8">    
-                    <button id="Expert-Level" class="level, btn btn-warning btn-lg" style="font-family: 'Fredoka One'; letter-spacing: 5px; box-shadow: 3px 3px 3px 3px rgb(0, 0, 0, 0.5); margin-top: 2em;">Expert</button> 
+                    <button id="Expert-Level" class="level, btn btn-warning btn-lg" style="font-family: 'Fredoka One'; letter-spacing: 5px; box-shadow: 3px 3px 3px 3px rgb(0, 0, 0, 0.5); margin-top: 2em;" type="button;">Expert</button> 
                 </div>
              </div>
           
-             </div>
+        </div>
         </div>
     </div> 
 
 
 
-     <div id="games">
+    <div id="games">
     <div class="container1">
         <div id="box3">
               <p>Select your Game</p>
         </div>
-        <div id="box6" style="padding-bottom: 5%; margin-top: 50px;">
+        <div id="box6" style="padding-bottom: 2%; margin-top: 50px;">
             <div id="box7">
-               <button id="Game1" class="game, btn btn-warning btn-lg" style="font-family: 'Fredoka One'; letter-spacing: 5px; box-shadow: 3px 3px 3px 3px rgb(0, 0, 0, 0.5);">Game#1</button>
-               <button id="Game2" class="game, btn btn-warning btn-lg" style="font-family: 'Fredoka One'; letter-spacing: 5px; box-shadow: 3px 3px 3px 3px rgb(0, 0, 0, 0.5);">Game#2</button>
+               <a href="trivia.html"><button id="Game1" class="Game1, btn btn-warning btn-lg" style="font-family: 'Fredoka One'; letter-spacing: 5px; box-shadow: 3px 3px 3px 3px rgb(0, 0, 0, 0.5);" type="button;">Trivia</button>
+               <a href="fill.html"><button id="Game2" class="Game2, btn btn-warning btn-lg" style="font-family: 'Fredoka One'; letter-spacing: 5px; box-shadow: 3px 3px 3px 3px rgb(0, 0, 0, 0.5); font-size: 100%;" type="button;">Fill the Blanks</button>
             </div>
             <div id="box8">   
-               <button id="Game3" class="game, btn btn-warning btn-lg" style="font-family: 'Fredoka One'; letter-spacing: 5px; box-shadow: 3px 3px 3px 3px rgb(0, 0, 0, 0.5);">Game#3</button>
+              <a href="memory.html"> <button id="Game3" class="Game3, btn btn-warning btn-lg" style="font-family: 'Fredoka One'; letter-spacing: 5px; box-shadow: 3px 3px 3px 3px rgb(0, 0, 0, 0.5);" type="button;">Memory</button>
             </div>   
         </div>
-    </div> 
-
+    </div>
+    <script src="js/index.js"></script>
 
 </body>
 </html>
