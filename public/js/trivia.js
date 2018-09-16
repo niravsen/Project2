@@ -3,7 +3,7 @@ var triviaBtnGame1 = $("#btn-trivia-game1");
 var triviaBtnGame2 = $("#btn-trivia-game2");
 var triviaBtnGame3 = $("#btn-trivia-game3");
 
-// GAME-EASY PAGE: Set variable for the page elements (sections). These ID's belong to div tags, and will allow us to 
+// TRIVIA GAME PAGE: Set variable for the page elements (sections). These ID's belong to div tags, and will allow us to 
 // show() or hide() sections on the "click" of a button.
 var trivia1 = $("#trivia1");
 var trivia2 = $("#trivia2");

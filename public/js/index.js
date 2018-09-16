@@ -18,9 +18,15 @@ var signIn = $("#signIn");
 
 // LAYOUT PAGE: These are the buttons to navigate through the layout page.
 var htmlBtn = $("#html-btn");
-var cssBtn = $("#css-btn");
 var signInBtn = $("#signInBtn");
 var signUpBtn = $("#signUpBtn");
+var cssBtn = $("#CSS-language");
+var javaBtn = $("#Javascript-language");
+var pytBtn = $("#Python-language");
+var rubyBtn = $("#Ruby-language");
+var bgnBtn = $("#Beginner-Level");
+var intBtn = $("#Intermediate-Level");
+var expBtn = $("#Expert-Level");
 
 $(document).ready(function() {
   // INDEX PAGE: On click event for submit button on index page, to submit user information to database.
@@ -34,11 +40,57 @@ $(document).ready(function() {
   })
 
   // LAYOUT PAGE: When the use selects a language, it will hide() the language div, and show() the level div.
+  level.hide();
+  games.hide();
+
   htmlBtn.on("click", function() {
-    language.hide();
-    level.show();
-    games.hide();  
+  language.hide();
+  level.show();
+  games.hide();  
   });
+
+  cssBtn.on("click", function() {
+  language.hide();
+  level.show();
+  games.hide();  
+  });
+
+  javaBtn.on("click", function() {
+  language.hide();
+  level.show();
+  games.hide();  
+  });
+
+  pytBtn.on("click", function() {
+  language.hide();
+  level.show();
+  games.hide();  
+  });
+
+  rubyBtn.on("click", function() {
+  language.hide();
+  level.show();
+  games.hide();  
+  });
+
+  bgnBtn.on("click", function(){
+    language.hide();
+    level.hide();
+    games.show();
+  });
+
+  intBtn.on("click", function(){
+    language.hide(); 
+    level.hide();
+    games.show();
+  });
+
+  expBtn.on("click", function(){
+    language.hide();
+    level.hide();
+    games.show();
+  });
+
 
   cssBtn.on("click", function() {
     language.hide();
