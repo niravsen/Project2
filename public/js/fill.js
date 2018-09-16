@@ -3,7 +3,7 @@ var fillBtnGame1 = $("#btn-fill-game1");
 var fillBtnGame2 = $("#btn-fill-game2");
 var fillBtnGame3 = $("#btn-fill-game3");
 
-// GAME-EASY PAGE: Set variable for the page elements (sections). These ID's belong to div tags, and will allow us to 
+// FILL GAME PAGE: Set variable for the page elements (sections). These ID's belong to div tags, and will allow us to 
 // show() or hide() sections on the "click" of a button.
 var fill1 = $("#fill1");
 var fill2 = $("#fill2");
