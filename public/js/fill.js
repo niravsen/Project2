@@ -31,12 +31,19 @@ $(document).ready(function () {
 });
 var htmlEasyQuestionArray = [
     {
-        question: "What does HTML stand for? Hyper Text Markup __________",
+        question: "HTML stands for: Hyper Text Markup ________",
         answer: "language"
     } , {
-        question: "The ________ is the main section of the HTML code",
+        question: "The ____ is the main section of the HTML code",
         answer: "body"
-    }]
+    } , {
+        question: "The 'img' tag holds an _____",
+        answer: "image"
+    } , {
+        question: "A div at the bottom of the page is called a ______",
+        answer: "footer",
+    }
+]
 var currentQuestion = 0;
 var answer;
 var quizLength = htmlEasyQuestionArray.length
@@ -44,7 +51,7 @@ var guessed = false;
 
 function fillInTheBlanks(){
 $("#gameArea").empty();
-$("#gameArea").append('<h1> HTML Quiz </h1>')
+$("#gameArea").append('<p> Fill in the Blanks! </p>')
 $("#gameArea").append('<p> Type in your answer and press Enter</p>');
 $("#gameArea").append('<p id="questionBox"></p>');
 $("#gameArea").append('<div class="input-field"><input type="text" id="inputBox"></div>'); 
@@ -83,7 +90,7 @@ function gameOver(){
 $("#gameArea").empty();
 $("#gameArea").append('<h3> Congratulations! You have completed Fill in the Blanks! </h3>');
 $("#gameArea").append('<p> Click the Button to mave on to the next game </p>');
-$("#gameArea").append('<a><button id="newGame" class="button"> New Game </button></a>  ')
+$("#gameArea").append('<a><button id="newGame" class="button"> Next Game </button></a>  ')
 }
 
 $(document).on("click", "#next", function(){

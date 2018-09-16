@@ -28,34 +28,75 @@ body {
     <div id="box1">
         <p>PLAY N' LEARN</p>
     </div>
-    <!-- sign up form -->
-    <div class="row" style="border: 20px solid #f4ce42; border-radius: 3%; box-shadow: 3px 3px 10px 10px rgb(0, 0, 0, 0.25);">
-            <form class="col-sm-12">
-                    <h3 style="font-family: 'Fredoka One', cursive; color:rgb(33, 168, 168)">Sign Up & Start!</h3>
-                <div class="row">
-                    <div class="input-field col-lg-6">
-                        <input placeholder="First Name" id="first-name" type="text" class="validate">
-                        <label for="first-name"></label>
-                    </div>
-                    <div class="input-field col-lg-6">
-                        <input placeholder="Last Name" id="last-name" type="text" class="validate">
-                        <label for="last-name"></label>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="input-field col-lg-12">
-                        <input placeholder="Country" id="country" type="text" class="validate">
-                        <label for="country"></label>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="input-field col-lg-12">
-                        <input placeholder="Age" id="age" type="text" class="validate">
-                        <label for="country"></label>
-                    </div>
-                </div>
-                <a href="layout.html"><button id="index-submit" class="btn waves-effect waves-yellow" type="button">Sign In!</button></a> 
-            </form>
+
+    <div id="indexBtns">
+        <div class="row">
+            <button class="waves-effect waves-light btn" id="signInBtn">Sign In</button>
         </div>
+        <div class="row">
+            <button class="waves-effect waves-light btn" id="signUpBtn">Sign Up</button>
+        </div>
+    </div>
+    <!-- sign up form -->
+    <div id ="signUp" class="row" style="border: 20px solid #f4ce42; border-radius: 3%; box-shadow: 3px 3px 10px 10px rgb(0, 0, 0, 0.25);">
+        <form class="col m 12">
+            <h3 style="font-family: 'Fredoka One', cursive; color:rgb(33, 168, 168)">Sign Up & Start!</h3>
+            <div class="row">
+                <div class="input-field col s6">
+                    <input placeholder="First Name" id="first-name" type="text" class="validate">
+                    <label for="first-name">First Name</label>
+                </div>
+                <div class="input-field col s6">
+                    <input placeholder="Last Name" id="last-name" type="text" class="validate">
+                    <label for="last-name">Last Name</label>
+                </div>
+            </div>
+            <div class="row">
+                <div class="input-field col l6">
+                    <input placeholder="User Name" id="user-name" type="text" class="validate">
+                    <label for="new-user-name">Username</label>
+                </div>
+            </div>
+            <div class="row">
+                <div class="input-field col s12">
+                    <input id="new-password" type="password" class="validate">
+                    <label for="password">Password</label>
+                </div>
+            </div>
+            <div class="row">
+                <div class="input-field col l12">
+                    <input placeholder="Country" id="country" type="text" class="validate">
+                    <label for="country">Country</label>
+                </div>
+            </div>
+            <div class="row">
+                <div class="input-field col-lg-12">
+                    <input placeholder="Age" id="age" type="text" class="validate">
+                    <label for="age">Age</label>
+                </div>
+            </div>
+            <a href="layout.html"><button id="index-submit" class="btn waves-effect waves-yellow" type="button">Sign up!</button></a> 
+        </form>
+    </div>
+    <div id ="signIn" class="row" style="border: 20px solid #f4ce42; border-radius: 3%; box-shadow: 3px 3px 10px 10px rgb(0, 0, 0, 0.25);">
+        <form class="col m 12">    
+            <h3 style="font-family: 'Fredoka One', cursive; color:rgb(33, 168, 168)">Sign in!</h3>
+        
+            <div class="row">
+                <div class="input-field">
+                    <input placeholder="User Name" id="user-name" type="text" class="validate">
+                    <label for="user-name">Username</label>
+                </div>
+            </div>
+            <div class="row">
+                <div class="input-field">
+                    <input id="password" type="password" class="validate">
+                    <label for="password">Password</label>
+                </div>
+            </div>
+            <a href="layout.html"><button id="index-submit" class="btn waves-effect waves-yellow" type="button">Sign In!</button></a> 
+        </form>
+    </div>
+    <script src="js/index.js"></script>
 </body>
 </html>
