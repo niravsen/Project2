@@ -1,5 +1,5 @@
 -- Drops the blogger if it exists currently --
-DROP DATABASE IF EXISTS project_2;
+-- DROP DATABASE IF EXISTS project_2;--
 -- Creates the "blogger" database --
 CREATE DATABASE project_2;
 
@@ -15,4 +15,4 @@ CREATE TABLE users (
     PRIMARY KEY (id)
 );
 
--- SELECT * FROM posts;
+ -- SELECT * FROM users; --

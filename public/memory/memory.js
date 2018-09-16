@@ -75,7 +75,7 @@ HTMLGame = {
 		
 		//load the images and image cover
 		for(var i = 1; i <= noOfBoxGame; i++){
-			boxes += "<div id='box-" + i + "' class='box-picture'><img src='images/" + (parseInt(boxIndexes[i-1]) + 1) + ".jpg'/></div>";
+			boxes += "<div id='box-" + i + "' class='box-picture'><img src='images/" + (parseInt(boxIndexes[i-1]) + 1) + ".png'/></div>";
 			boxCover += "<div id='box-cover-" + i + "' class='box-cover' data-id='" + (parseInt(boxIndexes[i-1]) + 1) + "'></div>";
 		}
 		boxCover = "<div class='box-cover-wrapper'>" + boxCover + "</div>";

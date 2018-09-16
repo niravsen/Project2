@@ -58,13 +58,58 @@ p {
 
 #box2 {
   width: 30%;
-  length: 20%;
+  padding-bottom: .5%;
   background-color: black;
   margin-left: auto;
   margin-right: 10%;
   box-shadow: 2px 2px 2px 2px rgb(0, 0, 0, 0.5);
-
 }
+
+#box3 {
+  margin-top: 3%;
+  width: 80%;
+  length: 10%;
+  background-color: black;
+  margin-left: 10%;
+  border: 3em dotted #f4ce42;
+  box-shadow: 5px 5px 5px 5px rgb(0, 0, 0, 0.5);
+  /* border-radius: 20%; */
+}
+
+#box4 {
+  /* padding-top: 1%; */
+  margin-top: 4%;
+  margin-left: 10%;
+  width: 80%;
+  padding-bottom: 2%;
+  /* length: 20%; */
+  /* background-color: lightgreen; */
+}
+
+#box5 {
+  margin-left: 10%;
+  margin-top: 2%;
+  width: 80%;
+  padding-bottom: 1%;
+  /* length: 20%; */
+  /* background-color: lightcoral; */
+}
+
+#box6{
+  margin-top: 2%;
+  margin-left: 10%;
+  width: 80%;
+  padding-bottom: 2%;
+  background-color: #f4ce42;
+  border: .25em solid black;
+  box-shadow: 5px 5px 5px 5px rgb(0, 0, 0, 0.5);
+}
+
+/* #box7{
+width: 80%;
+padding-bottom: 10%;
+background-color: lightcoral;
+} */
 
 
 .row{
@@ -72,7 +117,7 @@ p {
   width: 45%;
   /* length: 40%; */
   background-color: rgb(253, 247, 231);
-  border-style: solid, inset;
+  /* border-style: solid, inset; */
   border-color: #f4ce42;
 }
 
@@ -121,156 +166,137 @@ h6 {
   text-shadow: 1px 1px rgb(0, 0, 0, 0.5);
 }
 
-
-
-/* TESTING MEMORY GAME CSS */
-html,body{
-	margin:0;
-	padding:0;
-	text-align:center;
+.container1 {
+  width: 80%;
+  length: 20%;
+  /* background-color: lightblue; */
+  margin-top: 10%;
+  margin: auto;
+  padding-bottom: 2%;
 }
 
-#canvas-game{
-	margin:0 auto;
-	text-align:left;
-	width:612px;
-	margin-top:20px;
-	border:Solid 1px #ebe5e5;
-	height:385px;
-	position:relative;
+.container2 {
+  width: 80%;
+  length: 20%;
+  background-color: lightblue;
+  margin-top: 10%;
+  margin: auto;
+  padding-bottom: 2%;
 }
 
-#game-statistic{
-	margin:0 auto;
-	text-align:left;
-	width:612px;
-	margin-top:20px;
+#html-btn{
+  width: 30%;
+  margin-left: 0.5%;
+  padding-top: 2%;
+  padding-bottom: 7%;
+  background-color: rgb(85, 21, 189);
+  border: solid 2px;
+  text-shadow: 3px 3px rgb(0, 0, 0, 0.25)
 }
 
-
-#statistic-left, #statistic-right{
-	font-style:italic;
-	font-size:12px;
-	float:left;
+#CSS-language{
+  width: 30%;
+  margin-left: 4%;
+  margin-right: 4%;
+  padding-top: 2%;
+  padding-bottom: 7%;
+  background-color: rgb(196, 36, 188);
+  border: solid 2px;
+  text-shadow: 3px 3px rgb(0, 0, 0, 0.25)
 }
 
-#statistic-right{
-	float:right;
+#Javascript-language{
+  width: 30%;
+  padding-top: 2%;
+  padding-bottom: 7%;
+  background-color: rgb(235, 143, 22);
+  border: solid 2px;
+  text-shadow: 3px 3px rgb(0, 0, 0, 0.25)
 }
 
-.bold-text{
-	font-weight:bold;
+#Python-language{
+  width: 30%;
+  margin-left: 15%;
+  padding-top: 2%;
+  padding-bottom: 7%;
+  background-color: rgb(41, 235, 50);
+  border: solid 2px;
+  text-shadow: 3px 3px rgb(0, 0, 0, 0.25)
 }
 
-.clear{
-	clear:both;
+#Ruby-language {
+  width: 30%;
+  margin-left: 10%;
+  padding-top: 2%;
+  padding-bottom: 7%;
+  background-color: rgb(219, 26, 26);
+  border: solid 2px;
+  text-shadow: 3px 3px rgb(0, 0, 0, 0.25)
 }
 
-.box-picture{
-	float:left;
-	width:100px;
-	height:75px;
-	border:solid 1px #ebe5e5;
-        display:none;
+#Beginnger-Level {
+  width: 30%;
+  margin-top: 5%;
+  margin-left: 15%;
+  margin-right: 5%;
+  padding-top: 2%;
+  padding-bottom: 7%;
+  background-color: rgb(26, 219, 203);
+  border: solid 2px;
+  text-shadow: 3px 3px rgb(0, 0, 0, 0.25)
 }
 
-.box-picture > img{
-	width:100px;
-	height:75px;
+#Intermediate-Level {
+  width: 30%;
+  margin-top: 5%;
+  margin-left: 5%;
+  padding-top: 2%;
+  padding-bottom: 7%;
+  background-color: rgb(219, 158, 26);
+  border: solid 2px;
+  text-shadow: 3px 3px rgb(0, 0, 0, 0.25)
 }
 
-.box-cover-wrapper{
-	position:absolute;
-	left:0;
-	top:0;
-	z-index:100;
+#Expert-Level {
+  width: 30%;
+  margin-left: 35%;
+  padding-top: 2%;
+  padding-bottom: 7%;
+  background-color: rgb(219, 26, 26);
+  border: solid 2px;
+  text-shadow: 3px 3px rgb(0, 0, 0, 0.25)
 }
 
-.box-cover{
-	width:125px;
-	height:75px;
-	background:url(../images/cover1.png) no-repeat;
-	background-color: pink;
-	border:solid 1px #ebe5e5;
-	float:left;
-	cursor:pointer;
+#Game1 {
+  width: 30%;
+  margin-top: 5%;
+  margin-left: 25%;
+  margin-right: 5%;
+  padding-top: 2%;
+  padding-bottom: 7%;
+  background-color: rgb(26, 219, 203);
+  border: solid 2px;
+  text-shadow: 3px 3px rgb(0, 0, 0, 0.25)
 }
 
-#game-message{
-	margin:0 auto;
-	font-size:20px;
-	background:#f7f5b5;
-	padding:15px;
-	border:solid 1px #ccc;
-	border-radius:5px;
-	width:612px;
-	display:none;
+#Game2 {
+  width: 30%;
+  margin-top: 5%;
+  margin-left: 5%;
+  padding-top: 2%;
+  padding-bottom: 7%;
+  background-color: rgb(219, 158, 26);
+  border: solid 2px;
+  text-shadow: 3px 3px rgb(0, 0, 0, 0.25)
 }
 
-#btnRestart{
-	padding:15px;
-	font-weight:bold;
-	text-align:center;
-	background:#043255;
-	text-decoration:uppercase;
-	margin-top:20px;
-	color:#fff;
-	border:none;
-	border-radius:5px;
-	cursor:pointer;
-}
-
-/**** IF SCREEN SIZE IS NO LARGER THAN 640px ****/
-@media (max-width: 640px) {
-	#canvas-game{
-		width:385px;
-		height:348px;
-	}
-	
-	.box-picture, .box-picture > img, .box-cover{
-		width:75px;
-		height:56px;
-	}
-	
-	.box-cover{
-		background:url(../images/cover1.png) no-repeat;
-	}
-	
-	#game-statistic{
-		margin-top:20px;
-	}
-	
-	#game-message, #game-statistic{
-		width:385px;
-	}
-	
-}
-
-/**** IF SCREEN SIZE IS NO LARGER THAN 320px ****/
-@media (max-width: 320px) {
-	#canvas-game{
-		width:156px;
-		height:390px;
-	}
-	
-	.box-picture, .box-picture > img, .box-cover{
-		width:50px;
-		height:38px;
-	}
-	
-	.box-cover{
-		background:url(../images/cover1.png) no-repeat;
-	}
-	
-	#game-statistic{
-		margin-top:20px;
-	}
-	
-	#game-message, #game-statistic{
-		width:156px;
-	}
-	
-	#statistic-left, #statistic-right{
-		float:none;
-	}
+#Game3 {
+  width: 30%;
+  margin-top: 5%;
+  margin-left: 35%;
+  padding-top: 2%;
+  padding-bottom: 7%;
+  background-color: rgb(219, 26, 26);
+  border: solid 2px;
+  text-shadow: 3px 3px rgb(0, 0, 0, 0.25)
 }

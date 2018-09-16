@@ -17,9 +17,9 @@ var games = $("#games");
 var htmlBtn = $("#html-btn");
 var cssBtn = $("#css-btn");
 
-$(document).ready(function () {
+$(document).ready(function() {
   // INDEX PAGE: On click event for submit button on index page, to submit user information to database.
-  indexSubmit.on("click", function () {
+  indexSubmit.on("click", function() {
     db.User.create({
       first_name: firstName.val().trim(),
       last_name: lastName.val().trim(),
@@ -29,12 +29,13 @@ $(document).ready(function () {
   })
 
   // LAYOUT PAGE: When the use selects a language, it will hide() the language div, and show() the level div.
-  htmlBtn.on("click", function () {
+  htmlBtn.on("click", function() {
     language.hide();
     level.show();
+  games.hide();  
   });
 
-  cssBtn.on("click", function () {
+  cssBtn.on("click", function() {
     language.hide();
     level.show();
   });
