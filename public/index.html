@@ -1,9 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
+<style>
+body { 
+  background: url(images/main_page.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+</style>
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href='styles/styles.css'/>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Luckiest+Guy" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Fredoka+One" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/css/materialize.min.css">
     <title>Sign-in Page</title>
     <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/js/materialize.min.js"></script>
@@ -11,43 +25,37 @@
 
 </head>
 <body>
-    <div class="navbar fixed">
-        <nav>
-            <div class="nav wrapper center">
-            <h1>Play N' Learn</h1>
-            </div>
-        </nav>
-    </div>  
-<!--sign up-->
-    <div class="row">
-        <form class="col s12">
-            <div class="row">
-                <div class="input-field col s6">
-                    <input  id="firstName" type="text" class="validate">
-                    <label for="firstName">First Name</label>
-                </div>
-                <div class="input-field col s6">
-                    <input id="lastName" type="text" class="validate">
-                    <label for="lastName">Last Name</label>
-                </div>
-            </div>
-            <div class="row">
-                <div class="input-field col s9">
-                    <input  id="country" type="text" class="validate">
-                    <label for="country">Country</label>
-                </div>
-            </div>
-            <div class="row">
-                <div class="input-field col s3">
-                    <input  id="age" type="text" class="validate">
-                    <label for="country">Age</label>
-                </div>
-            </div>
-            <a href="/layout.html">
-                <button class="btn waves-effect waves-light" type="button" id="index-submit">Submit</button>           
-             </a> 
-        </form>
+    <div id="box1">
+        <p>PLAY N' LEARN</p>
     </div>
-    
+    <!-- sign up form -->
+    <div class="row" style="border: 20px solid #f4ce42; border-radius: 3%; box-shadow: 3px 3px 10px 10px rgb(0, 0, 0, 0.25);">
+            <form class="col-sm-12">
+                    <h3 style="font-family: 'Fredoka One', cursive; color:rgb(33, 168, 168)">Sign Up & Start!</h3>
+                <div class="row">
+                    <div class="input-field col-lg-6">
+                        <input placeholder="First Name" id="first-name" type="text" class="validate">
+                        <label for="first-name"></label>
+                    </div>
+                    <div class="input-field col-lg-6">
+                        <input placeholder="Last Name" id="last-name" type="text" class="validate">
+                        <label for="last-name"></label>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="input-field col-lg-12">
+                        <input placeholder="Country" id="country" type="text" class="validate">
+                        <label for="country"></label>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="input-field col-lg-12">
+                        <input placeholder="Age" id="age" type="text" class="validate">
+                        <label for="country"></label>
+                    </div>
+                </div>
+                <a href="layout.html"><button id="index-submit" class="btn waves-effect waves-yellow" type="button">Sign In!</button></a> 
+            </form>
+        </div>
 </body>
 </html>
