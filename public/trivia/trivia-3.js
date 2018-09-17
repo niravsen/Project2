@@ -1,45 +1,45 @@
 //Declaring the quiz variables
 var question1 = 
 {
-    question: "",
-    answer: "",
-    choices: ["", "", "", ""],
+    question: "What does HTML stand for",
+    answer: "HyperText Markup Language",
+    choices: ["Hyperlinks, Text, Markups and Linguistics", "HyperText Markup Language", "HyperTools Markup Language"],
     correctAnswer: 1,
     // correctImg: "assets/images/question1.jpg"
 };
 
 var question2 = 
 {
-    question: "",
-    answer: "",
-    choices: ["", "", "", ""],
+    question: "What tag is used to make the text bold?",
+    answer: "<strong>",
+    choices: ["<strong>", "<dark>", "<black>"],
     correctAnswer: 0,
     // correctImg: "assets/images/question2.jpg"
 };
 
 var question3 = 
 {
-    question: "",
-    answer: "",
-    choices: ["", "", "", ""],
-    correctAnswer: 3,
+    question: "HTML document begins with",
+    answer: "<html>",
+    choices: ["<body>", "<p>", "<html>"],
+    correctAnswer: 2,
     // correctImg: "assets/images/question3.jpg"
 };
 
 var question4 = 
 {
-    question: "",
-    answer: "",
-    choices: ["", "", "", ""],
+    question: "Which of the following is the closing tag?",
+    answer: "</>",
+    choices: ["/>", "</>", "<>"],
     correctAnswer: 1,
     // correctImg: "assets/images/question4.jpg"
 };
 
 var question5 = 
 {
-    question: "",
-    answer: "",
-    choices: ["", "", "", ""],
+    question: "h1 element in HTML defines",
+    answer: "Headings",
+    choices: ["Hyper-Links", "Headings", "Hypertext"],
     correctAnswer: 1,
     // correctImg: "assets/images/question5.jpg"
 };

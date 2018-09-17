@@ -1,45 +1,45 @@
 //Declaring the quiz variables
 var question1 = 
 {
-    question: "",
-    answer: "",
-    choices: ["", "", "", ""],
+    question: "What is HTML?",
+    answer: "Language",
+    choices: ["Game", "Language", "Movie"],
     correctAnswer: 1,
     // correctImg: "assets/images/question1.jpg"
 };
 
 var question2 = 
 {
-    question: "",
-    answer: "",
-    choices: ["", "", "", ""],
+    question: "What can HTML do?",
+    answer: "Create a Webpage",
+    choices: ["Create a Webpage", "Define a Document", "Play Movies"],
     correctAnswer: 0,
     // correctImg: "assets/images/question2.jpg"
 };
 
 var question3 = 
 {
-    question: "",
-    answer: "",
-    choices: ["", "", "", ""],
-    correctAnswer: 3,
+    question: "What are the main contents of a basic HTML? (Take A Guess)",
+    answer: "html,head,body",
+    choices: ["title,para,body", "html,body,title", "html,head,body"],
+    correctAnswer: 2,
     // correctImg: "assets/images/question3.jpg"
 };
 
 var question4 = 
 {
-    question: "",
-    answer: "",
-    choices: ["", "", "", ""],
+    question: "Can HTML be used for styling the webpage?",
+    answer: "Yes",
+    choices: ["Maybe", "Yes", "No"],
     correctAnswer: 1,
     // correctImg: "assets/images/question4.jpg"
 };
 
 var question5 = 
 {
-    question: "",
-    answer: "",
-    choices: ["", "", "", ""],
+    question: "If '<>' is an opening tag, then what does a closing tag look like?",
+    answer: "'</>'",
+    choices: ["'/>", "'</>'", "'</'"],
     correctAnswer: 1,
     // correctImg: "assets/images/question5.jpg"
 };
