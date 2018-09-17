@@ -1,45 +1,45 @@
 //Declaring the quiz variables
 var question1 = 
 {
-    question: "1",
-    answer: "",
-    choices: ["", "", "", ""],
+    question: "Where can you find HTML?",
+    answer: "Internet",
+    choices: ["Newspaper", "Internet", "Movies"],
     correctAnswer: 1,
     // correctImg: "assets/images/question1.jpg"
 };
 
 var question2 = 
 {
-    question: "",
-    answer: "",
-    choices: ["", "", "", ""],
+    question: "Can you create your own HTML?",
+    answer: "Yes",
+    choices: ["Yes", "Maybe", "No"],
     correctAnswer: 0,
     // correctImg: "assets/images/question2.jpg"
 };
 
 var question3 = 
 {
-    question: "",
-    answer: "",
-    choices: ["", "", "", ""],
-    correctAnswer: 3,
+    question: "Do you think you can create games online?",
+    answer: "100%",
+    choices: ["NO no no", "Not Sure", "100%"],
+    correctAnswer: 2,
     // correctImg: "assets/images/question3.jpg"
 };
 
 var question4 = 
 {
-    question: "",
-    answer: "",
-    choices: ["", "", "", ""],
+    question:"Do you like surfing on Internet, or playing games?",
+    answer: "Yessssss",
+    choices: ["NO", "Yessssss", "Not sure"],
     correctAnswer: 1,
     // correctImg: "assets/images/question4.jpg"
 };
 
 var question5 = 
 {
-    question: "",
-    answer: "",
-    choices: ["", "", "", ""],
+    question: "What does HTML shows on Internet?",
+    answer: "Document",
+    choices: ["Color", "Document", "Game"],
     correctAnswer: 1,
     // correctImg: "assets/images/question5.jpg"
 };
