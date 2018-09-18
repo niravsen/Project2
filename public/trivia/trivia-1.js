@@ -197,6 +197,10 @@ $(document).ready(function()
 $('#timerDisplay').hide();
 $('.btn').hide();
 $("#reset").hide();
+$("#question").hide();
+$("#quizContent").hide();
+$("#quizImg").hide();
+// $("#scoreboard").hide();
 
 $('#startme').on("click", function() 
 
@@ -205,10 +209,16 @@ $('#startme').on("click", function()
         timer.reset();
         timer.start();
         //show timer and buttons
+        $("#question").show();
+        // $("#quizContent").show();
+        // $("#quizImg").show();
+        // $("#scoreboard").show();
+
         $('#timerDisplay').show();
         $('.btn').show();
         $("#reset").hide();
         $("#startme").hide();
+
     });
 
 
