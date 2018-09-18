@@ -60,25 +60,26 @@ $("#feedback").append('<button id="next" class="waves-effect waves-light btn"> N
 };
 
 function gameOver(){
-$("#gameArea").empty();
-$("#gameArea").append('<h3> Congratulations! You have completed Fill in the Blanks! </h3>');
-$("#gameArea").append('<p> Click the Button to mave on to the next game </p>');
-$("#gameArea").append('<a href="../memory/memory-3.html"><button id="newGame" class="waves-effect waves-light btn"> Next Game </button></a>  ')
+    $("#gameArea").empty();
+    gifCall();
+    $("#gameArea").append('<h3> Congratulations! You have completed Fill in the Blanks! </h3>');
+    $("#gameArea").append('<p> Click the Button to mave on to the next game </p>');
+    $("#gameArea").append('<a href="../memory/memory-3.html"><button id="newGame" class="waves-effect waves-light btn"> Next Game </button></a>  ')
 }
 
 $(document).on("click", "#next", function(){
-checkProgess();
-$("#feedback").empty();
-guessed = false;
+    checkProgess();
+    $("#feedback").empty();
+    guessed = false;
 })
 
 $(document).on("keyup",function(e){
-e.preventDefault();
-if(e.which==13 && guessed === false){
-    checkAnswer()
-} else if(e.which==13 && guessed === true){
-    document.getElementById("next").click();
-}
+    e.preventDefault();
+    if(e.which==13 && guessed === false){
+        checkAnswer()
+    } else if(e.which==13 && guessed === true){
+        document.getElementById("next").click();
+    }
 });
 
 fillInTheBlanks();

@@ -60,6 +60,7 @@ $("#feedback").append('<button id="next" class="waves-effect waves-light btn"" s
 
 function gameOver(){
 $("#gameArea").empty();
+gifCall();
 $("#gameArea").append('<h3> Congratulations! You have completed Fill in the Blanks! </h3>');
 $("#gameArea").append('<p> Click the Button to mave on to the next game </p>');
 $("#gameArea").append('<a href="../memory/memory-1.html"><button id="newGame" class="waves-effect waves-light btn"> Next Game </button></a>  ')
