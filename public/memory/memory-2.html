@@ -1,5 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
+<style>
+body { 
+background: url(images/memory.png) repeat center center fixed; 
+-webkit-background-size: cover;
+-moz-background-size: cover;
+-o-background-size: cover;
+background-size: 22%;
+}
+</style>
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,13 +17,18 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css" type="text/css" rel="stylesheet"/>
     <link href="styles/styles.css" type="text/css" rel="stylesheet"/>
     <link href="memory.css" type="text/css" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css?family=Luckiest+Guy" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Fredoka+One" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Marmelad" rel="stylesheet">
 </head>
 <body>
     <div id="memory2">
         <head>
-            <h1>Memory Tiles! - <span></span></h1>
+            <h1>Memory Tiles!<span></span></h1>
             </head>
             <body>
+            <div class="game-back">
+                <h3>~ Match those cards ~</h3>
             <div id="canvas-game">
                 <div id="game-content"></div>
             </div>
