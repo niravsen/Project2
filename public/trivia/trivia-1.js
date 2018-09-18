@@ -96,8 +96,9 @@ else
     $("#scoreboard").html("<div>"+ "Game Over! <br> Your Score" +"</div>"+
     "<div>"+ "Correct Guesses: " + gameScores.answeredCorrect +"</div>" + 
     "<div>"+ "Wrong Guesses: " + gameScores.answeredWrong +"</div>" +
-    "<div>"+ "Missed Questions: " + gameScores.missed +"</div>" 
+    "<div>"+ "Missed Questions: " + gameScores.missed +"</div>" ;
     );
+    gifCall();
 
     timer.stop();
     $('#timerDisplay').html('00:00');

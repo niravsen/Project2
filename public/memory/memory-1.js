@@ -31,7 +31,7 @@ $(document).ready(function () {
 
 // MEMORY GAME FUNCTIONALITY 
 //variables
-var noOfBoxGame = 30;
+var noOfBoxGame = 12;
 var boxIndexes = [];
 var noOfClick = 0;
 var clickCounter = 0;
