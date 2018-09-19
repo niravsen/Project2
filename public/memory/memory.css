@@ -16,13 +16,24 @@ html,body{
 	position:relative;
 }
 
+#instruction-game {
+	background-color: rgb(253, 247, 231);
+	/* border:solid 1px #ebe5e5; */
+	margin-left: 60px;
+	margin-right: 60px;
+	font-size:24px;
+	text-align: left;
+	font-family: 'Fredoka One', cursive;
+	color: rgb(239, 146, 69);
+}
+
 .game-back {
 	/* padding-top: 2%; */
 	padding-bottom: 8%;
 	margin: 0 auto;
 	margin-bottom: 30px;
 	width: 750px;
-	height: 475px;
+	height: 850px;
 	background-color: rgb(253, 247, 231);
 	border: solid 10px rgb(33, 168, 168);
 	box-shadow: 5px 5px 10px 10px rgb(0, 0, 0, 0.5);
@@ -39,7 +50,8 @@ html,body{
 #statistic-left, #statistic-right{
 	font-size:20px;
 	float:left;
-	font-family: 'Marmelad', sans-serif;
+	color: rgb(178, 21, 10);
+	font-family: 'Fredoka One', cursive;
 }
 
 #statistic-right{
