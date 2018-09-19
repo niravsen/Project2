@@ -36,6 +36,11 @@ margin-top: 2%;
 box-shadow: 3px 3px 10px 10px rgb(0, 0, 0, 0.5);
 }
 
+#timerDisplay {
+font-family: 'Luckiest Guy', cursive;
+font-size: 30px;
+}
+
 #startme{
 width: 40%;
 margin-top: 3%;
@@ -46,6 +51,11 @@ background-color: rgb(32, 206, 183);
 border: solid 2px;
 text-shadow: 3px 3px rgb(0, 0, 0, 0.25);
 font-size: 50px;
+}
+
+.resetme {
+    background-color: #009999;
+    color: white;
 }
 
 .button {

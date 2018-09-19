@@ -5,34 +5,30 @@ var question1 =
     answer: "HyperText Markup Language",
     choices: ["Hyperlinks, Text, Markups and Linguistics", "HyperText Markup Language", "HyperTools Markup Language"],
     correctAnswer: 1,
-    // correctImg: "assets/images/question1.jpg"
 };
 
 var question2 = 
 {
     question: "What tag is used to make the text bold?",
-    answer: "<strong>",
+    answer: "&lt;strong&gt;",
     choices: ["<strong>", "<dark>", "<black>"],
     correctAnswer: 0,
-    // correctImg: "assets/images/question2.jpg"
 };
 
 var question3 = 
 {
     question: "HTML document begins with",
-    answer: "<html>",
+    answer: "&lt;html&gt;",
     choices: ["<body>", "<p>", "<html>"],
     correctAnswer: 2,
-    // correctImg: "assets/images/question3.jpg"
 };
 
 var question4 = 
 {
     question: "Which of the following is the closing tag?",
-    answer: "</>",
+    answer: "&lt;/&gt;",
     choices: ["/>", "</>", "<>"],
     correctAnswer: 1,
-    // correctImg: "assets/images/question4.jpg"
 };
 
 var question5 = 
@@ -41,7 +37,6 @@ var question5 =
     answer: "Headings",
     choices: ["Hyper-Links", "Headings", "Hypertext"],
     correctAnswer: 1,
-    // correctImg: "assets/images/question5.jpg"
 };
 
 
@@ -83,6 +78,8 @@ if (indexQuestion < QuestionsArray.length)
     $('#quizContent').hide();
     $('#timerDisplay').show();
     $('.btn').show();
+    $("#resetme").hide();
+    $("#nextBtn").hide();
     timer.stop();
     timer.reset();
     timer.start();
@@ -98,11 +95,13 @@ else
     "<div>"+ "Wrong Guesses: " + gameScores.answeredWrong +"</div>" +
     "<div>"+ "Missed Questions: " + gameScores.missed +"</div>" 
     );
+    gifCall();
 
     timer.stop();
     $('#timerDisplay').html('00:00');
 
     $("#reset").show();
+    $("#nextBtn").show();
 
     $('.resetme').click(function()
     {
@@ -112,12 +111,12 @@ else
         $('#question').show();
         $('.btn').show();
         $('#timerDisplay').show();
-        timer.stop();
-        timer.reset();
-        timer.start();
+        $('#nextBtn').show();
+        $('#reset').show();
+        
+
 
     });
-    
 }
 
 
@@ -196,8 +195,6 @@ function displayQuestion()
     $("#button0").text(QuestionsArray[indexQuestion].choices[0]);
     $("#button1").text(QuestionsArray[indexQuestion].choices[1]);
     $("#button2").text(QuestionsArray[indexQuestion].choices[2]);
-    $("#button3").text(QuestionsArray[indexQuestion].choices[3]);
-
 }
 //Start game on button press
 
@@ -206,9 +203,13 @@ $(document).ready(function()
 
 
 {	//hide all until start button is pressed
-$('#timerDisplay').hide();
-$('.btn').hide();
-$("#reset").hide();
+    $('#timerDisplay').hide();
+    $('.btn').hide();
+    $("#reset").hide();
+    $("#question").hide();
+    $("#quizContent").hide();
+    $("#quizImg").hide();
+    $("#nextBtn").hide();
 
 $('#startme').on("click", function() 
 
@@ -217,12 +218,13 @@ $('#startme').on("click", function()
         timer.reset();
         timer.start();
         //show timer and buttons
+        $("#question").show();
         $('#timerDisplay').show();
         $('.btn').show();
         $("#reset").hide();
+        $("#nextBtn").hide();
         $("#startme").hide();
     });
-
 
 
 //User input check answer
@@ -230,47 +232,49 @@ $('.btn').click(function()
 {
 
 
-if (indexQuestion < QuestionsArray.length)
-{
-    var userButtonValue = ($(this).attr("data-value"));
-    console.log(userButtonValue);
-    //Check for win
-    if (userButtonValue == QuestionsArray[indexQuestion].correctAnswer)
+    if (indexQuestion < QuestionsArray.length)
     {
+        var userButtonValue = ($(this).attr("data-value"));
+        console.log(userButtonValue);
+        //Check for win
+        if (userButtonValue == QuestionsArray[indexQuestion].correctAnswer)
+        {
+            
+            $('#quizContent').html("<h2><p>Correct!</p></h2>");
+            gameScores.answeredCorrect ++;//increment score
+            console.log("correct answer " + gameScores.answeredCorrect);
+            
+            //reset timer
+            timer.stop();
+            timer.reset();						
         
-        $('#quizContent').html("<h2><p>Correct!</p></h2><img src='" + QuestionsArray[indexQuestion].correctImg + "' height = 150 width = 150 alt='correct'>");
-        gameScores.answeredCorrect ++;//increment score
-        console.log("correct answer " + gameScores.answeredCorrect);
+    
+        }
+        //Else loss
+        else
+        {
         
-        //reset timer
-        timer.stop();
-        timer.reset();						
+            $('#quizContent').html("<h2><p>Wrong! <br> The correct answer was: <br>" + QuestionsArray[indexQuestion].answer + "</p></h2>");
+            gameScores.answeredWrong ++;
+            console.log("wrong answer " + gameScores.answeredWrong);
     
-
+            //reset timer
+            timer.stop();
+            timer.reset();	
+    
+    
+        }
+    
+        $('#quizContent').show();
+        $('#timerDisplay').hide();
+        $('.btn').hide();
+        $('#nextBtn').hide();
+    
+        setTimeout(nextQuestion, 3000);
+        
     }
-    //Else loss
-    else
-    {
-    
-        $('#quizContent').html("<h2><p>Wrong! <br> The correct answer was: <br>" + QuestionsArray[indexQuestion].answer + "</p></h2>");
-        gameScores.answeredWrong ++;
-        console.log("wrong answer " + gameScores.answeredWrong);
+    });
 
-        //reset timer
-        timer.stop();
-        timer.reset();	
-
-
-    }
-
-    $('#quizContent').show(); //show the correct img div
-    $('#timerDisplay').hide();
-    $('.btn').hide();
-
-    setTimeout(nextQuestion, 3000);
-    
-}
-});
 
 
 // end document.ready function
