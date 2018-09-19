@@ -69,6 +69,7 @@ indexQuestion = 0;
 
 $("#scoreboard").html("");
 $("#reset").hide();
+$("#nextBtn").hide();
 }
 
 //move to next question function
@@ -104,6 +105,7 @@ else
     $('#timerDisplay').html('00:00');
 
     $("#reset").show();
+    $("#nextBtn").show();
 
     $('.resetme').click(function()
     {
@@ -113,6 +115,7 @@ else
         $('#question').show();
         $('.btn').show();
         $('#timerDisplay').show();
+        $('#nextBtn').hide();
 
     });
     
@@ -219,7 +222,6 @@ $('#startme').on("click", function()
         $('.btn').show();
         $("#reset").hide();
         $("#startme").hide();
-
     });
 
 
@@ -265,6 +267,7 @@ if (indexQuestion < QuestionsArray.length)
     $('#quizContent').show(); //show the correct img div
     $('#timerDisplay').hide();
     $('.btn').hide();
+    $('#nextBtn').hide();
 
     setTimeout(nextQuestion, 3000);
     
