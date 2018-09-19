@@ -23,7 +23,7 @@ var guessed = false;
 
 function fillInTheBlanks(){
 $("#gameArea").empty();
-$("#gameArea").append('<p> Fill in the Blanks! </p>')
+// $("#gameArea").append('<p> Fill in the Blanks! </p>')
 $("#gameArea").append('<p> Type in your answer and press Enter</p>');
 $("#gameArea").append('<p id="questionBox"></p>');
 $("#gameArea").append('<div class="input-field"><input type="text" id="inputBox"></div>'); 
@@ -53,9 +53,9 @@ guessed = true;
 if (guess !== answer){
     $("#feedback").append('<p style="color:red"> Incorrect. The correct answer is: ' + answer + '</p>');
 } else {
-    $("#feedback").append('<p style="color:green"> Correct! Good Job</p>');
+    $("#feedback").append('<p style="color:#38b22e"> Correct! Good Job</p>');
 }
-$("#feedback").append('<button id="next" class="waves-effect waves-light btn"" style="margin:auto"> NEXT </button>')
+$("#feedback").append('<button id="next" class="btn btn-warning btn-lg"> NEXT </button>')
 };
 
 function gameOver(){
