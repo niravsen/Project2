@@ -97,8 +97,9 @@ else
     $("#scoreboard").html("<div>"+ "Game Over! <br> Your Score" +"</div>"+
     "<div>"+ "Correct Guesses: " + gameScores.answeredCorrect +"</div>" + 
     "<div>"+ "Wrong Guesses: " + gameScores.answeredWrong +"</div>" +
-    "<div>"+ "Missed Questions: " + gameScores.missed +"</div>" 
+    "<div>"+ "Missed Questions: " + gameScores.missed +"</div>" ;
     );
+    gifCall();
 
     timer.stop();
     $('#timerDisplay').html('00:00');
@@ -200,7 +201,10 @@ $(document).ready(function()
 $('#timerDisplay').hide();
 $('.btn').hide();
 $("#reset").hide();
-$("#nextBtn").hide();
+$("#question").hide();
+$("#quizContent").hide();
+$("#quizImg").hide();
+// $("#scoreboard").hide();
 
 $('#startme').on("click", function() 
 
@@ -209,11 +213,15 @@ $('#startme').on("click", function()
         timer.reset();
         timer.start();
         //show timer and buttons
+        $("#question").show();
+        // $("#quizContent").show();
+        // $("#quizImg").show();
+        // $("#scoreboard").show();
+
         $('#timerDisplay').show();
         $('.btn').show();
         $("#reset").hide();
         $("#startme").hide();
-        $("#nextBtn").hide();
     });
 
 

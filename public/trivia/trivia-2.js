@@ -98,7 +98,8 @@ else
     "<div>"+ "Wrong Guesses: " + gameScores.answeredWrong +"</div>" +
     "<div>"+ "Missed Questions: " + gameScores.missed +"</div>" 
     );
-
+    gifCall();
+    
     timer.stop();
     $('#timerDisplay').html('00:00');
 
