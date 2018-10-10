@@ -30,6 +30,8 @@
 
 <br>
 
+![1](https://github.com/niravsen/Project2/blob/master/1.png)
+![3](https://github.com/niravsen/Project2/blob/master/3.png)
 
 
 <h2>CREATED BY:</h2>
