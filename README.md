@@ -30,6 +30,7 @@
 
 <br>
 
+![pictue_one](https://github.com/niravsen/Project2/blob/master/picture_one.png)
 ![1](https://github.com/niravsen/Project2/blob/master/1.png)
 ![3](https://github.com/niravsen/Project2/blob/master/3.png)
 
